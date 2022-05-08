@@ -1,0 +1,213 @@
+:root {
+  --blue: #00538E;
+  --blue-light: #0A5A92;
+  --yellow: #FFC857;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+
+/*=== font css start === */
+@font-face {
+  font-family: FuturaPTHeavy;
+  src: url(../fonts/FuturaPTBook.otf);
+}
+/*===// end of font css === */
+
+
+/*=== base css start === */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+::after, ::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, ol, ul, p, address, strong, i {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+/*===// end of base css === */
+
+
+/* config start */
+section {
+  padding: 60px 0;
+}
+/* config end */
+
+
+/*=== utility css start === */
+.bg-blue {
+  background-color: var(--blue);
+}
+
+.rounded-5{
+  border-radius: 0.75rem;
+}
+
+.heading-1{
+  font-size: 56px;
+  line-height: 60px;
+  color: var(--blue);
+}
+
+.heading-2{
+  font-size: 32px;
+  color: var(--white);
+}
+/*===// end of utility css === */
+
+
+/*=== banner css start === */
+.banner {
+  background: url(../images/banner/hero.png) no-repeat center center/cover;
+  text-align: center;
+  min-height: 600px;
+  padding: 40px 0;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner h1 {
+  font-size: 56px;
+}
+
+.banner p {
+  font-size: 24px;
+}
+
+.banner .btn {
+  min-width: 150px;
+  font-size: 18px;
+  color: var(--blue);
+  margin: 1rem;
+}
+/*===// end of banner css === */
+
+
+
+/*=== upcoming-events css start === */
+.upcoming-events .event-card{
+  background-color: var(--yellow);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.upcoming-events .event-card .badge {
+  font-size: 14px;
+  color: var(--blue);
+  background: var(--white);
+  border-radius: 25px;
+}
+
+.upcoming-events .event-card .card-title {
+  font-size: 24px;
+  color: var(--blue-light);
+  margin-top: 10px;
+}
+
+.upcoming-events .event-card .description {
+  font-size: 1rem;
+  color: var(--blue-light);
+  line-height: 20px;
+}
+
+.upcoming-events .event-card .card-link {
+  font-size: 1rem;
+  color: var(--blue-light);
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.upcoming-events .event-card .card-link:hover {
+  text-decoration: underline;
+}
+/*===// end of upcoming-events css === */
+
+
+
+/*=== card-img-overlay css start === */
+.card-img-overlay.orange {
+  background-color: rgba(172, 106, 29, 0.8);
+}
+.card-img-overlay.yellow {
+  background-color: rgba(203, 161, 40, 0.8);
+}
+.card-img-overlay.green {
+  background-color: rgba(105, 140, 61, 0.8);
+}
+.card-img-overlay.blue {
+  background-color: rgba(0, 83, 142, 0.8);
+}
+.card-img-overlay.purple {
+  background-color: rgba(91, 63, 143, 0.8);
+}
+.card-img-overlay.red {
+  background-color: rgba(101, 34, 18, 0.8);
+}
+.card-img-overlay.black-gradient {
+  background: linear-gradient(to bottom, rgba(23, 19, 19, 0.73), rgba(100, 97, 97, 0));
+}
+
+.card-img-overlay:hover {
+  opacity: 0.9;
+  transition: all 0.2s linear;
+}
+/*===// end of card-img-overlay css === */
+
+
+
+/*=== latest-news css start === */
+.latest-news .publish-date {
+  font-size: 24px;
+}
+/*===// end of latest-news css === */
+
+
+
+/*===###################### responsive css start ######################=== */
+@media(max-width: 767px){
+  .heading-1{
+    font-size: 45px;
+    line-height: 50px;
+  }
+  
+  .heading-2{
+    font-size: 26px;
+  }
+
+  .banner h1 {
+    font-size: 45px;
+  }
+  
+  .banner p {
+    font-size: 18px;
+  }
+
+  .banner .btn {
+    margin: 0.5rem;
+  }
+
+  .latest-news .publish-date {
+    font-size: 18px;
+  }
+}
+/*===######################// end of responsive css ######################=== */
